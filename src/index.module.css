@@ -1,0 +1,8 @@
+/* .app {
+    .color-style {
+        color: red;
+    }
+} */
+.app .color {
+    color: red;
+}

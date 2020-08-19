@@ -1,4 +1,6 @@
 import React from "react";
+// 设置样式模块，避免样式覆盖
+import styles from "./index.module.css";
 // import Button from "antd/es/button";
 // import "antd/dist/antd.css";
 
@@ -22,11 +24,12 @@ import AntdFormPage from "./pages/AntdForm4.js";
 
 function App() {
   return (
-    <div className="App">
+    <div className={styles.app}>
       <AntdFormPage />
       <MyContext.Provider value={{ themeColor: "red" }}>
         <UseReducerPage />
       </MyContext.Provider>
+      <div className={styles.color}>kkk</div>
     </div>
   );
 }
