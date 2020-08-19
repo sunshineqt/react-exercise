@@ -21,11 +21,15 @@ import UseReducerPage from "./pages/UseReducerPage.js";
 // import UseContextPage from "./pages/UseContextPage.js";
 import { MyContext } from "./AppContext";
 import AntdFormPage from "./pages/AntdForm4.js";
+import { FunctionComponent } from "./pages/FunctionComponent.js";
+import ClassComponent from "./pages/ClassComponent.js";
 
 function App() {
   return (
     <div className={styles.app}>
       <AntdFormPage />
+      <FunctionComponent />
+      <ClassComponent />
       <MyContext.Provider value={{ themeColor: "red" }}>
         <UseReducerPage />
       </MyContext.Provider>
