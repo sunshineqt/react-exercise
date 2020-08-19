@@ -18,7 +18,7 @@ import styles from "./index.module.css";
 // import RouteChildren from "./pages/RouteChildren.js";
 // import RouteComponentPage from "./pages/RouteComponentPage.js";
 import UseReducerPage from "./pages/UseReducerPage.js";
-import UseContextPage from "./pages/UseContextPage.js";
+// import UseContextPage from "./pages/UseContextPage.js";
 import { MyContext } from "./AppContext";
 import AntdFormPage from "./pages/AntdForm4.js";
 
