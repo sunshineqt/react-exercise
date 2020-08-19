@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 // import "antd/dist/antd.css";
 
 // import { Button } from "antd";
-// import HomePage from "./pages/HomePage.js";
+import HomePage from "./pages/HomePage.js";
 // import HocPage from "./pages/HocPage.js";
 // import DecoratorsPage from "./pages/DecoratorsPage.js";
 // import FormPage from "./pages/FormPage.js";
@@ -17,23 +17,23 @@ import styles from "./index.module.css";
 // import RouterPage from "./pages/RouterPage.js";
 // import RouteChildren from "./pages/RouteChildren.js";
 // import RouteComponentPage from "./pages/RouteComponentPage.js";
-import UseReducerPage from "./pages/UseReducerPage.js";
+// import UseReducerPage from "./pages/UseReducerPage.js";
 // import UseContextPage from "./pages/UseContextPage.js";
-import { MyContext } from "./AppContext";
-import AntdFormPage from "./pages/AntdForm4.js";
-import { FunctionComponent } from "./pages/FunctionComponent.js";
-import ClassComponent from "./pages/ClassComponent.js";
+// import { MyContext } from "./AppContext";
+// import AntdFormPage from "./pages/AntdForm4.js";
+// import { FunctionComponent } from "./pages/FunctionComponent.js";
+// import ClassComponent from "./pages/ClassComponent.js";
 
 function App() {
   return (
     <div className={styles.app}>
-      <AntdFormPage />
-      <FunctionComponent />
-      <ClassComponent />
+      <HomePage />
+      {/** 
       <MyContext.Provider value={{ themeColor: "red" }}>
         <UseReducerPage />
       </MyContext.Provider>
       <div className={styles.color}>kkk</div>
+      */}
     </div>
   );
 }
