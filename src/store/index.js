@@ -10,7 +10,7 @@ const initalUserInfo = {
   user: { name: null },
 };
 
-// 定义修改规则
+// 定义state初始化和修改规则
 function countReducer(state = 0, action) {
   switch (action.type) {
     case "ADD":
