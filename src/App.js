@@ -23,11 +23,18 @@ import HomePage from "./pages/HomePage.js";
 // import AntdFormPage from "./pages/AntdForm4.js";
 // import { FunctionComponent } from "./pages/FunctionComponent.js";
 // import ClassComponent from "./pages/ClassComponent.js";
+import EventHandle from "./pages/EventHandle";
+import store from "./store/index";
+
+function tellme(msg) {
+  console.log(msg, "msg");
+}
 
 function App() {
   return (
     <div className={styles.app}>
-      <HomePage />
+      {/**父组件向子组件传递数据 */}
+      <EventHandle store={store} tellme={tellme} />
       {/** 
       <MyContext.Provider value={{ themeColor: "red" }}>
         <UseReducerPage />
