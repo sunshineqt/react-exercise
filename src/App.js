@@ -32,11 +32,13 @@ import styles from "./index.module.css";
 // }
 
 import LifeCycleNew from "./pages/LifeCycleNew";
+import ContextPageNew from "./pages/ContextPageNew";
 
 function App() {
   return (
     <div className={styles.app}>
-      <LifeCycleNew />
+      <ContextPageNew />
+
       {/**父组件向子组件传递数据 */}
       {/**<EventHandle store={store} tellme={tellme} /> */}
       {/** 
