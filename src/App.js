@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 // import "antd/dist/antd.css";
 
 // import { Button } from "antd";
-import HomePage from "./pages/HomePage.js";
+// import HomePage from "./pages/HomePage.js";
 // import HocPage from "./pages/HocPage.js";
 // import DecoratorsPage from "./pages/DecoratorsPage.js";
 // import FormPage from "./pages/FormPage.js";
@@ -23,18 +23,22 @@ import HomePage from "./pages/HomePage.js";
 // import AntdFormPage from "./pages/AntdForm4.js";
 // import { FunctionComponent } from "./pages/FunctionComponent.js";
 // import ClassComponent from "./pages/ClassComponent.js";
-import EventHandle from "./pages/EventHandle";
-import store from "./store/index";
 
-function tellme(msg) {
-  console.log(msg, "msg");
-}
+// import EventHandle from "./pages/EventHandle";
+// import store from "./store/index";
+
+// function tellme(msg) {
+//   console.log(msg, "msg");
+// }
+
+import LifeCycleNew from "./pages/LifeCycleNew";
 
 function App() {
   return (
     <div className={styles.app}>
+      <LifeCycleNew />
       {/**父组件向子组件传递数据 */}
-      <EventHandle store={store} tellme={tellme} />
+      {/**<EventHandle store={store} tellme={tellme} /> */}
       {/** 
       <MyContext.Provider value={{ themeColor: "red" }}>
         <UseReducerPage />
