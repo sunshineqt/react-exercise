@@ -5,7 +5,7 @@ import styles from "./index.module.css";
 // import "antd/dist/antd.css";
 
 // import { Button } from "antd";
-import HomePage from "./pages/HomePage.js";
+// import HomePage from "./pages/HomePage.js";
 // import HocPage from "./pages/HocPage.js";
 // import DecoratorsPage from "./pages/DecoratorsPage.js";
 // import FormPage from "./pages/FormPage.js";
@@ -34,10 +34,12 @@ import HomePage from "./pages/HomePage.js";
 // import LifeCycleNew from "./pages/LifeCycleNew";
 // import ContextPageNew from "./pages/ContextPageNew";
 
+import TreePage from "./pages/TreePage";
+
 function App() {
   return (
     <div className={styles.app}>
-      <HomePage />
+      <TreePage />
 
       {/**父组件向子组件传递数据 */}
       {/**<EventHandle store={store} tellme={tellme} /> */}
