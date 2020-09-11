@@ -3,6 +3,8 @@ import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
 // connect帮助组件获得store，本质上是一个高阶组件，返回了一个新的组件
 
+import { add, minus, asyAdd } from "../action/reactReduxPage";
+
 export default connect(
   // 第一个参数为mapStateToProps 是一个函数，可以获取state 把state映射到了props上
   (state) => ({ count: state }),
@@ -54,3 +56,8 @@ export default connect(
     }
   }
 );
+
+// export default connect(
+//   state=> ({count: state}),
+//   {add, minus, asyAdd}
+// )(ReactReduxPage)
